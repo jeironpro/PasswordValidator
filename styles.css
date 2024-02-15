@@ -1,0 +1,80 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto;
+    padding: 10px;
+    width: 450px;
+}
+
+.contenedor-input {
+    margin: 10px;
+}
+
+.contenedor-input input {
+    background-color: #1acf1a;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    padding-left: 5px;
+    width: 300px;
+}
+
+.contenedor-input input::placeholder {
+    color: #000;
+}
+
+.contenedor-input input:focus {
+    outline: 1px solid #fff;
+}
+
+.validador {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin: 0 15px;
+}
+
+.validador span {
+    margin-top: 5px;
+}
+
+.validador i {
+    color: #1acf1a;
+    opacity: 0.5;
+}
+
+.validador .requerimiento {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor {
+        margin-top: 250px;
+        width: 380px;
+    }
+
+    .contenedor-input input {
+        font-size: 12px;
+        height: 28px;
+        width: 250px;
+    }
+
+    .validador .requerimiento {
+        font-size: 12px;
+    }
+}
