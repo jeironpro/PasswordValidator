@@ -17,6 +17,7 @@ body {
 
 .contenedor-input {
     margin: 10px;
+    position: relative;
 }
 
 .contenedor-input input {
@@ -28,8 +29,8 @@ body {
     font-size: 14px;
     font-weight: 600;
     height: 30px;
-    padding-left: 5px;
-    width: 300px;
+    margin: 0;
+    width: 100%;
 }
 
 .contenedor-input input::placeholder {
@@ -38,6 +39,15 @@ body {
 
 .contenedor-input input:focus {
     outline: 1px solid #fff;
+}
+
+.boton-mostrar-ocultar {
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .validador {

@@ -33,3 +33,12 @@ document.getElementById('contrasena').addEventListener('input', function() {
         iconoNumero.style.opacity = '0.5';
     }
 })
+
+function mostrar_ocultar() {
+    var input_contrasena = document.getElementById("contrasena");
+    var icono_mostrar = document.getElementById('icono_mostrar');
+
+    input_contrasena.type = input_contrasena.type === "password" ? "text" : "password";
+
+    icono_mostrar.className = input_contrasena.type === "password" ? "fa-solid fa-eye" : "fa-solid fa-eye-slash";
+}
